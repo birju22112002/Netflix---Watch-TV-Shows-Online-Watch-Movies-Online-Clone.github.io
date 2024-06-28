@@ -1,0 +1,142 @@
+/** @format */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/header.png");
+  background-size: cover;
+  background-position: center;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 180px;
+  }
+}
+
+.input {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .input {
+    width: 450px;
+  }
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72%;
+  height: 54%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.card-3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+  padding: 25px 20px;
+}
+
+@media (min-width: 768px) {
+  .card-3 {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding: 25px 100px 50px;
+  }
+}
+
+.desc-3 {
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .desc-3 {
+    padding-left: 100px;
+  }
+}
+
+.card-3 video,
+.card-3 img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .card-3 video,
+  .card-3 img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.active .content {
+  max-height: 200px;
+}
+
+.accordion-item .label span {
+  transition: transform 0.3s;
+}
+
+.accordion-item.active .label span {
+  transform: rotate(45deg);
+}
+
+/** @format */
+
+.accordion-item .label span {
+  transition: transform 0.3s;
+}
+
+.accordion-item.active .label span {
+  transform: rotate(45deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.active .content {
+  max-height: 200px;
+}
+
+.input {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .input {
+    width: 450px;
+  }
+}
